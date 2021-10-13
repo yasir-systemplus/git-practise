@@ -23,14 +23,11 @@ export default class Counter extends React.Component {
 
   doSomething() {
     //Counter class
-    console.log(this);
-
     //if This returns null then we would bind keyword.
     //check constructor
   }
 
   render() {
-    this.doSomething();
     // can't use const for contcatination.
 
     // let classes = "p-2 mr-2 ";
@@ -56,7 +53,12 @@ export default class Counter extends React.Component {
         <button className="bg-green-500 p-2" onClick={this.decrease}>
           Decrease
         </button>
-        <button className="bg-red-500 p-2" onClick={this.props.onClick}>
+        <button
+          className="bg-red-500 p-2"
+          onClick={() => {
+            this.props.onClick(this.props.id);
+          }}
+        >
           Remove
         </button>
       </div>
