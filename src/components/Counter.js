@@ -53,8 +53,11 @@ export default class Counter extends React.Component {
         <button className="bg-blue-500 p-2" onClick={this.increase}>
           Increase
         </button>
-        <button className="bg-red-500 p-2" onClick={this.decrease}>
+        <button className="bg-green-500 p-2" onClick={this.decrease}>
           Decrease
+        </button>
+        <button className="bg-red-500 p-2" onClick={this.props.onClick}>
+          Remove
         </button>
       </div>
     );

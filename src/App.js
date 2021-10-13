@@ -1,10 +1,9 @@
 import React from "react";
 import "./App.css";
-import Counters from "./components/Counters";
-import Foo from "./components/Foo";
+import CountersPage from "./components/CountersPage";
 
 function App() {
-  return <Foo />;
+  return <CountersPage />;
 }
 
 export default App;
