@@ -1,17 +1,10 @@
-import React, { useState } from "react";
-import "./App.css";
-import Counter from "./components/Counter";
-import CountersPage from "./components/CountersPage";
-import Foo from "./components/Foo";
+import React from "react";
 
-function App() {
-  const [visible, setVisible] = useState(true);
+import Posts from "./components/Posts";
 
-  // <span>
-  //     <button onClick={() => setVisible((state) => !state)}>Toggle</button>
-  //     {visible && <Foo />}
-  //   </span>
-  return <CountersPage />;
+export default function App() {
+  //Dry -> Dont repeat your self.
+  //KISS - Keep it super simple.
+
+  return <Posts></Posts>;
 }
-
-export default App;
